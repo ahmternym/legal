@@ -25,9 +25,15 @@
             text-align: center;
             border-bottom: 3px solid #3498db;
             padding-bottom: 15px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             font-size: 1.8em;
+        }
+        .last-updated {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 40px;
         }
         h2 {
             color: #2980b9;
@@ -93,6 +99,7 @@
 
 <div class="container">
     <h1>FİZYONUBUL PLATFORMU <br> HUKUKİ METİNLER</h1>
+    <div class="last-updated">Son Güncelleme Tarihi: 06.04.2026</div>
 
     <h2>I. KULLANIM KOŞULLARI VE SORUMLULUK REDDİ SÖZLEŞMESİ</h2>
     
@@ -103,19 +110,22 @@
     <p class="highlight">Platform, kullanıcılar ile uzmanları dijital ortamda bir araya getiren bir aracı hizmettir.</p>
 
     <h3>3. Tıbbi Sorumluluk Reddi</h3>
-    <p>FizyonuBul bir sağlık kuruluşu değildir ve tıbbi hizmet sunmaz.</p>
+    <p>FizyonuBul bir sağlık kuruluşu değildir ve tıbbi hizmet sunmaz. <strong>FizyonuBul, 1219 sayılı Kanun kapsamında bir tıbbi teşhis veya tedavi yöntemi sunmamaktadır.</strong> Platform üzerindeki paylaşımlar ve görüşmeler sadece bilgilendirme amaçlıdır ve bir doktor muayenesinin yerini tutmaz.</p>
     
     <div class="alert-danger">
-        Acil durumlarda 112'yi arayınız.
+        Acil durumlarda lütfen 112'yi arayınız.
     </div>
 
-    <p>Tüm etkileşimler kullanıcı ve uzman sorumluluğundadır.</p>
+    <p>Tüm etkileşimler ve uygulanan tavsiyeler kullanıcı ve ilgili uzmanın kendi sorumluluğundadır.</p>
 
     <h3>4. Uzmanların Sorumluluğu</h3>
-    <p>Uzmanlar yükledikleri bilgilerin doğruluğundan sorumludur.</p>
+    <p>Uzmanlar Platforma yükledikleri bilgilerin, belgelerin ve beyanların doğruluğundan bizzat sorumludur.</p>
 
     <h3>5. Fikri Mülkiyet</h3>
-    <p>Platforma ait tüm haklar saklıdır.</p>
+    <p>Platforma ait tasarım, kod, marka ve tüm fikri mülkiyet hakları saklıdır.</p>
+
+    <h3>6. Kullanıcı Tarafından Oluşturulan İçerik (UGC) ve Davranış Kuralları</h3>
+    <p>Kullanıcılar ve uzmanlar; hakaret, taciz, nefret söylemi, müstehcenlik veya yasa dışı herhangi bir içerik paylaşamaz. Platform içindeki bu tür içerikler diğer kullanıcılar tarafından raporlanabilir. Platform Yönetimi, kural ihlali yapan içerikleri kaldırma ve ilgili hesapları kalıcı olarak askıya alma hakkını saklı tutar.</p>
 
     <hr>
 
@@ -123,46 +133,50 @@
 
     <h3>1. Toplanan Veriler</h3>
     <p>
-    Ad, soyad, e-posta, mesleki bilgiler ve kullanıcı tarafından yüklenen PDF dosyaları işlenir.
-    </p>
-
-    <p>
-    Ayrıca Firebase altyapısı kapsamında cihaz bilgisi, IP adresi, kullanım verisi ve hata kayıtları otomatik olarak işlenebilir.
+    Kayıt aşamasında ad, soyad, e-posta adresi, iletişim bilgileri, mesleki bilgiler (diploma vb.) ve kullanıcı tarafından yüklenen PDF dosyaları gibi kişisel veriler işlenmektedir. Ayrıca uygulama kullanımı sırasında Firebase altyapısı kapsamında cihaz bilgisi, IP adresi, kullanım verisi ve hata kayıtları otomatik olarak işlenebilir.
     </p>
 
     <h3>2. İşleme Amaçları</h3>
     <p>
-    Kullanıcı hesabı oluşturma, eşleştirme, güvenlik ve performans iyileştirme.
+    Toplanan veriler; kullanıcı hesabı oluşturma, uzman-kullanıcı eşleştirmesini sağlama, hukuki yükümlülükleri yerine getirme, sistem güvenliğini sağlama ve uygulama performansını iyileştirme amaçlarıyla işlenmektedir.
     </p>
 
     <h3>3. Üçüncü Taraf Hizmetler</h3>
+    <p>Sistem altyapısı için aşağıdaki hizmetler kullanılmaktadır:</p>
     <ul>
-        <li>Firebase Authentication</li>
-        <li>Firebase Firestore</li>
-        <li>Firebase Storage</li>
+        <li>Firebase Authentication (Kimlik Doğrulama)</li>
+        <li>Firebase Firestore (Veritabanı)</li>
+        <li>Firebase Storage (Dosya Depolama)</li>
     </ul>
 
-    <h3>4. Veri Aktarımı</h3>
-    <p>Veriler Firebase aracılığıyla yurt dışı sunucularda saklanabilir.</p>
+    <h3>4. Veri Aktarımı ve Açık Rıza</h3>
+    <p>Platform, bulut altyapısı olarak Firebase (Google) hizmetlerini kullanmaktadır. Bu nedenle, işlenen kişisel verileriniz Firebase'in yurt dışındaki güvenli sunucularında saklanmaktadır. <strong>Platformu kullanarak ve kayıt olarak, kişisel verilerinizin yurt dışına aktarılmasına açık rıza göstermiş sayılırsınız.</strong></p>
 
-    <h3>5. Sağlık Verisi</h3>
-    <p>Platform tıbbi değerlendirme yapmaz ve sağlık verilerini analiz etmez.</p>
+    <h3>5. Sağlık Verisi Kapsamı</h3>
+    <p>Platform yapay zeka veya otomatik algoritmalarla tıbbi değerlendirme yapmaz ve özel nitelikli sağlık verilerinizi analiz etmez.</p>
 
     <h3>6. Kullanıcı Hakları</h3>
-    <p>KVKK kapsamında veri silme ve düzeltme hakları vardır.</p>
+    <p>KVKK'nın 11. Maddesi kapsamında; kişisel verilerinizin işlenip işlenmediğini öğrenme, amacına uygun kullanılıp kullanılmadığını bilme, eksik/yanlış verilerin düzeltilmesini ve verilerinizin silinmesini talep etme haklarına sahipsiniz.</p>
 
-    <h3>7. Hesap Silme</h3>
-    <p>Email ile talep edilebilir: <strong>yilmazahmet5560@gmail.com</strong></p>
+    <h3>7. Hesap Silme ve Veri İmhası</h3>
+    <p>Kullanıcılar hesaplarını diledikleri zaman uygulamanın <strong>"Ayarlar" > "Hesabımı Sil"</strong> menüsü üzerinden kalıcı olarak silebilirler. Uygulama dışından hesap silme ve veri imhası talepleri için <strong>yilmazahmet5560@gmail.com</strong> adresine e-posta gönderebilirsiniz.</p>
 
-    <h3>8. Çerez ve Takip</h3>
-    <p>Reklam amaçlı tracking yoktur.</p>
+    <h3>8. Çerezler (Cookies) ve İzleme</h3>
+    <p>Platformumuzda davranışsal reklamcılık amacıyla üçüncü taraf çerezleri (tracking) kullanılmamaktadır.</p>
+
+    <h3>9. Veri Sorumlusu Kimliği</h3>
+    <p>
+        6698 sayılı KVKK uyarınca Veri Sorumlusu:<br>
+        <strong>Ad Soyad:</strong> Ahmet Eren Yaman<br>
+        <strong>İletişim:</strong> yilmazahmet5560@gmail.com
+    </p>
 
     <div class="consent-box">
-        <p>Devam eden kullanıcılar bu politikayı kabul etmiş sayılır.</p>
+        <p><strong>KABUL VE BEYAN:</strong> Platformu kullanmaya devam eden, kayıt olan veya içerik yükleyen tüm kullanıcılar, işbu Kullanım Koşulları ve KVKK Aydınlatma Metnini okumuş, anlamış ve hür iradesiyle kabul etmiş sayılır.</p>
     </div>
 
     <div class="footer">
-        <p>&copy; 2026 FizyonuBul</p>
+        <p>&copy; 2026 FizyonuBul Tüm Hakları Saklıdır.</p>
     </div>
 </div>
 
