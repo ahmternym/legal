@@ -41,6 +41,7 @@
             border-left: 5px solid #3498db;
             padding-left: 15px;
             font-size: 1.4em;
+            scroll-margin-top: 20px;
         }
         h3 {
             color: #34495e;
@@ -88,6 +89,13 @@
             border: 1px solid #3498db;
             margin-top: 30px;
         }
+        .explicit-consent-box {
+            background-color: #f0fdf4;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #16a34a;
+            margin-top: 20px;
+        }
         @media (max-width: 600px) {
             body { padding: 10px; }
             .container { padding: 20px; }
@@ -99,15 +107,17 @@
 
 <div class="container">
     <h1>FİZYONUBUL PLATFORMU <br> HUKUKİ METİNLER</h1>
-    <div class="last-updated">Son Güncelleme Tarihi: 06.04.2026</div>
+    <div class="last-updated">Son Güncelleme Tarihi: 02.05.2026</div>
 
-    <h2>I. KULLANIM KOŞULLARI VE SORUMLULUK REDDİ SÖZLEŞMESİ</h2>
+    <!-- Uygulama derin bağlantısı: .../legal/#kullanim-kosullari -->
+    <h2 id="kullanim-kosullari">I. KULLANIM KOŞULLARI VE SORUMLULUK REDDİ SÖZLEŞMESİ</h2>
     
     <h3>1. Taraflar ve Tanımlar</h3>
     <p>İşbu sözleşme, FizyonuBul uygulamasını ("Platform") kullanan kullanıcılar ve fizyoterapistler ile Platform Yönetimi arasında akdedilmiştir.</p>
 
     <h3>2. Hizmetin Niteliği ve Kapsamı</h3>
     <p class="highlight">Platform, kullanıcılar ile uzmanları dijital ortamda bir araya getiren bir aracı hizmettir.</p>
+    <p>Platform, herhangi bir sağlık hizmeti sunmaz, teşhis veya tedavi gerçekleştirmez. Platform, kullanıcılar ile fizyoterapistler arasında kurulan hiçbir hizmet ilişkisinin tarafı değildir ve yalnızca listeleme ve iletişim kurulmasına aracılık eder.</p>
 
     <h3>3. Tıbbi Sorumluluk Reddi</h3>
     <p>FizyonuBul bir sağlık kuruluşu değildir ve tıbbi hizmet sunmaz. <strong>FizyonuBul, 1219 sayılı Kanun kapsamında bir tıbbi teşhis veya tedavi yöntemi sunmamaktadır.</strong> Platform üzerindeki paylaşımlar ve görüşmeler sadece bilgilendirme amaçlıdır ve bir doktor muayenesinin yerini tutmaz.</p>
@@ -116,10 +126,10 @@
         Acil durumlarda lütfen 112'yi arayınız.
     </div>
 
-    <p>Tüm etkileşimler ve uygulanan tavsiyeler kullanıcı ve ilgili uzmanın kendi sorumluluğundadır.</p>
+    <p>Tüm etkileşimler ve uygulanan tavsiyeler kullanıcı ve ilgili uzmanın kendi sorumluluğundadır. Platform üzerinden sunulan hiçbir içerik kişiye özel sağlık tavsiyesi niteliği taşımaz.</p>
 
     <h3>4. Uzmanların Sorumluluğu</h3>
-    <p>Uzmanlar Platforma yükledikleri bilgilerin, belgelerin ve beyanların doğruluğundan bizzat sorumludur.</p>
+    <p>Uzmanlar Platforma yükledikleri bilgilerin, belgelerin ve beyanların doğruluğundan bizzat sorumludur. Platform tarafından yapılan inceleme yalnızca şekli bir kontroldür ve belgelerin doğruluğu garanti edilmez.</p>
 
     <h3>5. Fikri Mülkiyet</h3>
     <p>Platforma ait tasarım, kod, marka ve tüm fikri mülkiyet hakları saklıdır.</p>
@@ -127,19 +137,29 @@
     <h3>6. Kullanıcı Tarafından Oluşturulan İçerik (UGC) ve Davranış Kuralları</h3>
     <p>Kullanıcılar ve uzmanlar; hakaret, taciz, nefret söylemi, müstehcenlik veya yasa dışı herhangi bir içerik paylaşamaz. Platform içindeki bu tür içerikler diğer kullanıcılar tarafından raporlanabilir. Platform Yönetimi, kural ihlali yapan içerikleri kaldırma ve ilgili hesapları kalıcı olarak askıya alma hakkını saklı tutar.</p>
 
+    <h3>7. Sorumluluğun Sınırlandırılması</h3>
+    <p>Platform, hizmetin kesintisiz, hatasız veya güvenli olacağını garanti etmez. Platform, kullanıcılar ile uzmanlar arasında gerçekleşen hiçbir etkileşimden doğabilecek doğrudan veya dolaylı zararlardan sorumlu değildir.</p>
+
+    <h3>8. Hesap Askıya Alma ve Sonlandırma</h3>
+    <p>Platform Yönetimi, gerekli gördüğü durumlarda kullanıcı hesaplarını askıya alma veya kalıcı olarak sonlandırma hakkını saklı tutar.</p>
+
+    <h3>9. Yaş Sınırı</h3>
+    <p>Platformu kullanmak için 18 yaşını doldurmuş olmak gerekmektedir. 18 yaş altındaki kullanıcılar platformu ancak veli veya yasal temsilcilerinin onayı ve sorumluluğu altında kullanabilir.</p>
+
+    <h3>10. Uyuşmazlık ve Yetkili Mahkeme</h3>
+    <p>İşbu sözleşmeden doğabilecek uyuşmazlıklarda Türkiye Cumhuriyeti hukuku uygulanır ve Ankara Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+
     <hr>
 
-    <h2>II. KİŞİSEL VERİLERİN KORUNMASI (KVKK) VE GİZLİLİK POLİTİKASI</h2>
+    <!-- Uygulama derin bağlantısı: .../legal/#gizlilik-ve-kvkk -->
+    <h2 id="gizlilik-ve-kvkk">II. KİŞİSEL VERİLERİN KORUNMASI (KVKK) VE GİZLİLİK POLİTİKASI</h2>
 
     <h3>1. Toplanan Veriler</h3>
-    <p>
-    Kayıt aşamasında ad, soyad, e-posta adresi, iletişim bilgileri, mesleki bilgiler (diploma vb.) ve kullanıcı tarafından yüklenen PDF dosyaları gibi kişisel veriler işlenmektedir. Ayrıca uygulama kullanımı sırasında Firebase altyapısı kapsamında cihaz bilgisi, IP adresi, kullanım verisi ve hata kayıtları otomatik olarak işlenebilir.
-    </p>
+    <p>Kayıt aşamasında ad, soyad, kısmi konum, e-posta adresi, iletişim bilgileri, mesleki bilgiler (diploma vb.) ve kullanıcı tarafından yüklenen PDF dosyaları gibi kişisel veriler işlenmektedir. Ayrıca uygulama kullanımı sırasında Firebase altyapısı kapsamında cihaz bilgisi, IP adresi, kullanım verisi ve hata kayıtları otomatik olarak işlenebilir.</p>
 
     <h3>2. İşleme Amaçları</h3>
-    <p>
-    Toplanan veriler; kullanıcı hesabı oluşturma, uzman-kullanıcı eşleştirmesini sağlama, hukuki yükümlülükleri yerine getirme, sistem güvenliğini sağlama ve uygulama performansını iyileştirme amaçlarıyla işlenmektedir.
-    </p>
+    <p>Toplanan veriler; kullanıcı hesabı oluşturma, uzman-kullanıcı eşleştirmesini sağlama, hukuki yükümlülükleri yerine getirme, sistem güvenliğini sağlama ve uygulama performansını iyileştirme amaçlarıyla işlenmektedir.</p>
+    <p>Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 5. maddesi uyarınca; sözleşmenin kurulması ve ifası, veri sorumlusunun hukuki yükümlülüklerini yerine getirmesi ve meşru menfaatleri kapsamında işlenmektedir. Açık rıza gerektiren durumlarda ayrıca açık rıza alınmaktadır.</p>
 
     <h3>3. Üçüncü Taraf Hizmetler</h3>
     <p>Sistem altyapısı için aşağıdaki hizmetler kullanılmaktadır:</p>
@@ -150,22 +170,22 @@
     </ul>
 
     <h3>4. Veri Aktarımı ve Açık Rıza</h3>
-    <p>Platform, bulut altyapısı olarak Firebase (Google LLC) hizmetlerini kullanmaktadır. Bu nedenle, işlenen kişisel verileriniz Firebase'in yurt dışındaki güvenli sunucularında saklanmaktadır. <strong>Platformu kullanarak ve kayıt olarak, kişisel verilerinizin yurt dışına aktarılmasına açık rıza göstermiş sayılırsınız.</strong></p>
+    <p>Platform, bulut altyapısı olarak Firebase (Google LLC) hizmetlerini kullanmaktadır. Bu nedenle, işlenen kişisel verileriniz Firebase'in yurt dışındaki güvenli sunucularında saklanmaktadır. Kayıt sırasında, ayrıca sunulan <strong>Açık Rıza Metni</strong> kapsamında kişisel verilerinizin yurt dışına aktarılmasına ve ilgili sunucularda işlenmesine onay vermektesiniz.</p>
 
     <h3>5. Sağlık Verisi Kapsamı</h3>
-    <p>Platform yapay zeka veya otomatik algoritmalarla tıbbi değerlendirme yapmaz ve özel nitelikli sağlık verilerinizi analiz etmez.</p>
+    <p>Platform yapay zeka veya otomatik algoritmalarla tıbbi değerlendirme yapmaz ve özel nitelikli sağlık verilerinizi analiz etmez. Kullanıcılar tarafından paylaşılan sağlık verilerinden platform sorumlu değildir.</p>
 
     <h3>6. Kullanıcı Hakları</h3>
     <p>KVKK'nın 11. Maddesi kapsamında; kişisel verilerinizin işlenip işlenmediğini öğrenme, amacına uygun kullanılıp kullanılmadığını bilme, eksik/yanlış verilerin düzeltilmesini ve verilerinizin silinmesini talep etme haklarına sahipsiniz.</p>
 
     <h3>7. Hesap Silme ve Veri İmhası</h3>
-    <p>Kullanıcılar hesaplarını diledikleri zaman uygulamanın <strong>"Profil" > "Hesabımı kalıcı olarak sil"</strong> menüsü üzerinden kalıcı olarak silebilirler. Hesap silindiğinde, kullanıcıya ait tüm kişisel veriler ve yüklenen belgeler sistemden kalıcı olarak imha edilir. Uygulama dışından hesap silme ve veri imhası talepleri için <strong>yilmazahmet5560@gmail.com</strong> adresine e-posta gönderebilirsiniz.</p>
+    <p>Kullanıcılar hesaplarını diledikleri zaman uygulamanın <strong>"Profil" &gt; "Hesabımı kalıcı olarak sil"</strong> menüsü üzerinden kalıcı olarak silebilirler. Hesap silindiğinde, kullanıcıya ait tüm kişisel veriler ve yüklenen belgeler sistemden kalıcı olarak imha edilir. Uygulama dışından talepler için yilmazahmet5560@gmail.com adresine e-posta gönderilebilir.</p>
 
     <h3>8. Çerezler (Cookies) ve İzleme</h3>
-    <p>Platformumuzda davranışsal reklamcılık amacıyla üçüncü taraf çerezleri (tracking) kullanılmamaktadır.</p>
+    <p>Platformumuzda davranışsal reklamcılık amacıyla üçüncü taraf çerezleri kullanılmamaktadır.</p>
 
     <h3>9. Veri Güvenliği (Data Safety) Beyanı</h3>
-    <p>Google Play Veri Güvenliği politikaları uyarınca; platformumuzda toplanan tüm kişisel veriler ve yüklenen belgeler (diploma vb.), cihazınız ile sunucularımız arasında <strong>taşıma sırasında şifrelenerek (Encrypted in transit)</strong> güvenli bir şekilde aktarılmaktadır.</p>
+    <p>Platformumuzda toplanan tüm kişisel veriler ve yüklenen belgeler, cihazınız ile sunucularımız arasında taşıma sırasında şifrelenerek güvenli bir şekilde aktarılmaktadır.</p>
 
     <h3>10. Veri Sorumlusu Kimliği</h3>
     <p>
@@ -181,6 +201,17 @@
     <p style="margin-top:20px; text-align:center;">
         Bu metin aynı zamanda uygulamanın <strong>Privacy Policy (Gizlilik Politikası)</strong> belgesi olarak kabul edilir.
     </p>
+
+    <hr>
+
+    <!-- Uygulama derin bağlantısı: .../legal/#acik-riza (kayıttaki 3. checkbox) -->
+    <h2 id="acik-riza">III. KİŞİSEL VERİLERİN YURT DIŞINA AKTARILMASINA İLİŞKİN AÇIK RIZA METNİ</h2>
+
+    <div class="explicit-consent-box">
+        <p>FizyonuBul platformu <strong>Kişisel Verilerin Korunması (KVKK) ve Gizlilik Politikası</strong> bölümünü okudum ve anladım.</p>
+        <p>Platformun teknik altyapısının sağlanması, verilerimin güvenli bir şekilde depolanması ve uygulamanın global standartlarda çalışabilmesi amacıyla; uygulamaya sağladığım <strong>kimlik, iletişim ve mesleki</strong> bilgilerimin ile <strong>yüklediğim belgelerin</strong> (ör. diploma PDF) <strong>yurt dışında mukim bulut altyapı sağlayıcısı</strong> olan <strong>Google Firebase</strong> sunucularına aktarılmasına, bu sunucularda <strong>saklanmasına ve işlenmesine</strong> özgür irademle <strong>açık rıza</strong> veriyorum.</p>
+        <p>Bu rızayı, uygulama içindeki kayıt sürecinde işaretlediğim onay kutusu ile de beyan etmiş olurum.</p>
+    </div>
 
     <div class="footer">
         <p>&copy; 2026 FizyonuBul Tüm Hakları Saklıdır.</p>
